@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRegister"
+   >
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Page"
+            android:textSize="40dp"
+            android:layout_marginLeft="65dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:id="@+id/label1"
+            android:fontFamily="@font/poppins_medium"
+            />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:id="@+id/name"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                />
+
+            <EditText
+                android:id="@+id/username_input"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@+id/name"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOB :"
+                    android:id="@+id/dob"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="59dp"
+                    />
+
+                <Button
+                    android:id="@+id/datePickerButton"
+                    style="?android:spinnerStyle"
+                    android:text="Select Your DOB"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:onClick="openDatePicker"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/dob"
+                     />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Gender :"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/gender"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="15dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:id="@+id/male"
+                            android:checked="false"
+                            android:onClick="checked"
+                            android:textColor="@color/white">
+                        </RadioButton>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:layout_toRightOf="@+id/male"
+                            android:id="@+id/female"
+                            android:checked="false"
+                            android:onClick="checked"
+                            android:textColor="@color/white">
+                        </RadioButton>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transgender"
+                            android:layout_toRightOf="@+id/female"
+                            android:id="@+id/trans"
+                            android:checked="false"
+                            android:onClick="checked"
+                            android:textColor="@color/white">
+                        </RadioButton>
+                    </RelativeLayout>
+
+
+                </RadioGroup>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile :"
+                    android:id="@+id/mobile"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="40dp"
+                    android:inputType="phone"
+                    android:layout_marginTop="35dp"
+                    android:layout_toRightOf="@+id/mobile"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/white"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City :"
+                    android:id="@+id/address"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="65dp"
+                    />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="40dp"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/address"
+                    android:layout_marginLeft="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Languages :"
+                    android:id="@+id/languages"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="15dp"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tamil"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:id="@+id/tamil"
+                    android:layout_marginTop="35dp"
+                    android:layout_toRightOf="@+id/languages"
+                    android:layout_marginLeft="10dp"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:id="@+id/english"
+                    android:layout_marginTop="35dp"
+                    android:layout_toRightOf="@+id/tamil"
+                    android:layout_marginLeft="10dp"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi"
+                    android:id="@+id/hindi"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/languages"
+                    android:layout_below="@+id/tamil"
+                    android:layout_marginLeft="10dp"
+                    />
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/other"
+                    android:hint="Any Other"
+                    android:textColorHint="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/hindi"
+                    android:layout_below="@+id/english"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginLeft="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education :"
+                    android:id="@+id/education"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/edu1"
+                    android:hint="UG/PG/HSC/Diploma"
+                    android:textColorHint="@color/dim"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/education"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginLeft="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course :"
+                    android:id="@+id/special"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="60dp"
+                    />
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/course1"
+                    android:hint="CS/CA/Com/Maths"
+                    android:textColorHint="@color/dim"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/special"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginLeft="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Key Skills :"
+
+                    android:id="@+id/keyskill"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="40dp"
+                    />
+               <AutoCompleteTextView
+                   android:layout_width="200dp"
+                   android:layout_height="40dp"
+                   android:id="@+id/skill"
+                   android:textColor="@color/white"
+                   android:layout_toRightOf="@+id/keyskill"
+                   android:backgroundTint="@color/white"
+                   android:layout_marginTop="25dp"
+                   android:layout_marginLeft="30dp"
+                   android:completionThreshold="1"
+                   android:maxLines="1"
+
+                   />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">myproject</string>
+    <string-array name="key_skills">
+        <item>J2ME</item>
+        <item>J2EE</item>
+        <item>Software Engineering</item>
+        <item>Digital Marketing</item>
+        <item>Debugging</item>
+        <item>Testing</item>
+        <item>Communication Skills</item>
+        <item>Presentation Skills</item>
+        <item>B</item>
+        <item>NoSQL</item>
+        <item>Express JS</item>
+        <item>Vue JS</item>
+        <item>Content Writing</item>
+        <item>Leadership</item>
+        <item>Troubleshooting</item>
+        <item>Linux</item>
+        <item>Unix</item>
+        <item>Windows</item>
+        <item>Problem Solving</item>
+        <item>Creativity</item>
+        <item>Team Worker</item>
+        <item>Machine Learning</item>
+        <item>Deep Learning</item>
+        <item>Artificial Intelligence</item>
+        <item>Natural Language Processing</item>
+        <item>Big Data Analysis</item>
+        <item>Cloud Computing</item>
+        <item>Apache</item>
+        <item>Data Structure</item>
+        <item>Data Security</item>
+        <item>Ethical Hacking</item>
+        <item>Game Developing</item>
+        <item>Animation</item>
+        <item>Agile Developing</item>
+        <item>Digital Literacy</item>
+        <item>Google Analytics</item>
+        <item>ELite Database</item>
+        <item>Casandra</item>
+        <item>HBase</item>
+        <item>Redis</item>
+        <item>Selenium</item>
+        <item>Software Developing</item>
+        <item>Logical Thinking</item>
+        <item>Mentoring</item>
+        <item>Blockchain</item>
+        <item>Cyber Security</item>
+        <item>Research</item>
+        <item>Accountancy</item>
+        <item>Statistics</item>
+        <item>CorelDRAW</item>
+        <item>Flash</item>
+        <item>Adobe Photoshop</item>
+        <item>UI/UX design</item>
+        <item>IoT</item>
+            <item>Decision-making</item>
+            <item>multitask</item>
+            <item>Punctuality</item>
+            <item>Scheduling</item>
+           <item>Team Building</item>
+        <item>Client Oriented</item>
+        <item>Flexibility</item>
+        <item>Creative Thinking</item>
+        <item>Quick Learner</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>Efficient</item>
+        <item>Product Management</item>
+        <item>Project Management</item>
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Javascript</item>
+        <item>Computer Literacy</item>
+        <item>Programming</item>
+        <item>Coding</item>
+        <item>Python</item>
+        <item>Data Analysis</item>
+        <item>HTML</item>
+        <item>CSS</item>
+        <item>Web Designing</item>
+        <item>Web Development</item>
+        <item>PHP</item>
+        <item>Spreadsheet</item>
+        <item>Excel</item>
+        <item>Collaboration</item>
+        <item>Graphic Design</item>
+        <item>Analytics</item>
+        <item>Computer Hardware</item>
+        <item>Data Information Visualization</item>
+        <item>Computer Networks</item>
+        <item>System Programming and Operating System</item>
+        <item>C#</item>
+        <item>.NET</item>
+        <item>VB.NEt</item>
+        <item>Angular</item>
+        <item>React</item>
+        <item>NODE JS</item>
+        <item>MongoDb</item>
+        <item>MySQL</item>
+        <item>FireBase</item>
+        <item>Oracle</item>
+        <item>MS Access</item>
+        <item>MS Word</item>
+        <item>WordPress</item>
+        <item>Ruby</item>
+        <item>SQLite</item>
+        <item>Dart</item>
+        <item>Android Studio</item>
+        <item>Flutter</item>
+        <item>Spring boot</item>
+        <item>Swift</item>
+        <item>Data Mining</item>
+        <item>FortRAN</item>
+        <item>Visual Basic</item>
+        <item>R</item>
+        <item>Go</item>
+        <item>Visual Studio</item>
+        <item>Perl</item>
+        <item>Objective C</item>
+        <item>Rust</item>
+        <item>React Native</item>
+        <item>TypeScript</item>
+        <item>PyScript</item>
+        <item>PL/SQL</item>
+        <item>Scala</item>
+        <item>Data Science</item>
+        <item>Power BI</item>
+        <item>Tableau</item>
+        <item>Jupyter Notebook</item>
+        <item>Jelly Beans</item>
+    </string-array>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="graduate">
+        <item>Under-Graduate</item>
+        <item>Post-Graduate</item>
+        <item>HSC</item>
+        <item>Diploma</item>
+    </string-array>
+    <string-array name="courses">
+        <item>Computer Science</item>
+        <item>Computer Applications</item>
+        <item>Maths</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+    </string-array>
+
+</resources>
