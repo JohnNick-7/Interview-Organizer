@@ -17,9 +17,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
 
-public class company_login extends AppCompatActivity {
+public class companyLogin extends AppCompatActivity {
 
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     EditText email, pass;
@@ -85,12 +84,12 @@ public class company_login extends AppCompatActivity {
                     {
                         progressDialog.dismiss();
                         sendUser();
-                        Toast.makeText(company_login.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(companyLogin.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
                     }
                     else
                     {
                         progressDialog.dismiss();
-                        Toast.makeText(company_login.this,"Invalid credentials",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(companyLogin.this,"Invalid credentials",Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -99,7 +98,7 @@ public class company_login extends AppCompatActivity {
     }
 
     private void sendUser() {
-        Intent i=new Intent(getApplicationContext(),companyActivity.class);
+        Intent i=new Intent(getApplicationContext(), companyHome.class);
         startActivity(i);
         finish();
     }

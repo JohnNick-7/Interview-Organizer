@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Myproject"
         tools:targetApi="33">
         <activity
+            android:name=".resumeUpload"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".homeUser"
             android:exported="false">
             <meta-data
@@ -20,14 +27,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".companyActivity"
+            android:name=".companyHome"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".company_login"
+            android:name=".companyLogin"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -61,10 +68,10 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginCandidate"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
