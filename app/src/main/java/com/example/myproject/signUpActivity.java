@@ -41,14 +41,16 @@ public class signUpActivity extends AppCompatActivity {
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(getApplicationContext(),MainActivity.class);
+                Intent i=new Intent(getApplicationContext(), LoginCandidate.class);
                 startActivity(i);
                 finish();
             }
         });
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View view) {
+
                 PerforAuth();
             }
         });
@@ -82,6 +84,9 @@ public class signUpActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()) {
                         progressDialog.dismiss();
+                        Intent i=new Intent(getApplicationContext(),UserRegister.class);
+                        i.putExtra("Email",em);
+                        startActivity(i);
                         Toast.makeText(signUpActivity.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                     }
                     else{

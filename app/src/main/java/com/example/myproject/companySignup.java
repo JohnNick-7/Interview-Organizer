@@ -41,7 +41,7 @@ public class companySignup extends AppCompatActivity {
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(getApplicationContext(),company_login.class);
+                Intent i=new Intent(getApplicationContext(), companyLogin.class);
                 startActivity(i);
                 finish();
             }
